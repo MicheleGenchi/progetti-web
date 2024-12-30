@@ -1,0 +1,48 @@
+version: "3.9"
+
+services:
+
+# DB database mysql (db-web)
+  db_web:
+    image: mysql:8.0.32
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: db_web
+      MYSQL_ROOT_PASSWORD: root
+    command:
+      - --table_definition_cache=100
+      - --performance_schema=0
+      - --default-authentication-plugin=mysql_native_password
+      - --innodb_use_native_aio=0
+    container_name:  db_web
+    ports:
+      - 33060:3306
+
+# Server apache per sviluppo html
+  apache:
+    image: httpd:latest
+    container_name: my-apache-app
+    ports:
+    - 8081:80
+    volumes:
+    - ./:/usr/local/apache2/htdocs
+
+# webdev (sviluppo php)
+  webdev:
+    container_name: webdev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: php -S 0.0.0.0:82 -t /progetti
+    environment:
+      XDEBUG_MODE: develop,debug
+      XDEBUG_CONFIG: client_host=host.docker.internal client_port=9003
+    volumes:
+      - ./php/progetti:/progetti # cartella progetto
+      - ./php/xdebug/docker-php-ext-xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini # impostazioni per debug
+      - ./php/php.ini:/usr/local/etc/php/php.ini # impostazioni php
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - 8200:82
