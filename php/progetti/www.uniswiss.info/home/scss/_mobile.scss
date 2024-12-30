@@ -1,0 +1,137 @@
+// main: main.scss
+@media only screen and (max-width: 768px) {
+  .header-white {
+    padding: 5px 0 5px 0;
+    .assistant {
+      margin-top: 10px;
+    }
+  }
+  .logo {
+    max-width:200px;
+  }
+  .hidden-mob {
+  display:none;
+  }
+  .display-mob {
+    display: block;
+  }
+  .display-in-mob {
+    display: inline-block;
+  }
+  .br-mobile {
+    display: block;
+  }
+  .br-30 {
+    margin-bottom: 30px;
+  }
+  .br-16 {
+    margin-bottom: 16px;
+  }
+  .mb-16 {
+    margin-bottom:16px;
+  }
+  //TIPOGRAFIA
+  h2 {
+    font: 1.5rem/1.2em "Roboto Slab", serif;
+    font-weight: 700;
+  }
+  h3 {
+    font-size:1.375rem;
+    font-weight: 700;
+    line-height:1.2em;
+  }
+  p {
+    font-size:1rem;
+    line-height:1.375rem;
+  }
+  .hero {
+    padding: 10px 0 20px 0;
+    margin-top: 0;
+    h1 {
+      font-weight: 700;
+      font: 2rem/1.2em "Roboto Slab", serif;
+    }
+    h2 {
+      margin-bottom:10px;
+      font-size:1.5rem;
+      line-height:1.75rem;
+    }
+    p {
+      margin-top: 10px;
+      font-size:1rem;
+      line-height:1.375rem;
+    }
+    .action {
+      text-align: center;
+      font-size:1rem;
+    }
+    .sottolink {
+      text-align: center;
+      a {
+        font-size:0.75rem;
+      }
+    }
+  }
+  .servizi {
+    padding: 10px 0 10px 0;
+    .row {
+      margin-top: 16px;
+    }
+    h2 {
+      color: #FFF;
+    }
+    h3 {
+      font-size:30px;
+    }
+    p {
+      font-size:16px;
+    }
+    .benefit {
+      font-size: 16px;
+      margin-top: 16px;
+    }
+  }
+  .page-footer {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    .nav-link {
+      padding:0 9px 0 0;
+      font-size: 12px;
+    }
+    .copy {
+      font-size:12px;
+      line-height:16px;
+      color: $gray-500;
+    }
+  }
+  .form {
+    margin: 30px 0 3px 0;
+    .form-int {
+      margin:0 6px 20px 6px;
+      padding: 10px 10px 20px 10px;
+      h3{
+        margin-top: 10px;
+      }
+      .mar-bot {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .come {
+    padding: 20px 0 20px 0;
+    .intro {
+      margin: 10px 0 10px 0;
+      h2 {
+        margin-bottom: 0;
+      }
+      h3 {
+        margin-top:15px;
+      }
+    }
+  }
+  .fissa-cta {
+    a {
+      font-size: 11px;
+    }
+  }
+}

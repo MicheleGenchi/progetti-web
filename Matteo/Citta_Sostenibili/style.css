@@ -1,0 +1,102 @@
+:root {
+    --h1-color:rgb(143, 60, 60);
+    --h2-color:#9acd32;
+    --h3-color:white;
+    --menu:#f08080;
+    --sfondo:url(paesaggio.jpg);
+}
+
+body {
+    background-image:var(--sfondo);
+    margin: 5%;
+}
+
+h1 {
+    color:var(--h1-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color:var(--h2-color);
+    margin-top:3%;
+}
+
+h3 {
+    color:var(--h3-color);
+    margin-top:1%;
+}
+
+p {
+    font-size:20px;
+    }
+
+p>a {
+    background-color: #f08080;    
+    padding: 2%;
+    font-size:32px;
+}
+
+p>a:hover {
+    background-color: var(--h1-color);    
+    padding: 2%;
+    font-size:32px;
+}
+
+
+.meta {
+    width:50%;
+}
+
+.nofloat {
+    clear:both;
+}
+
+.center {
+    text-align:center;
+}
+
+.left {
+    text-align: left;
+}
+
+.flex {
+    display:flexbox;
+}
+
+.a_sinistra {
+    float:left;
+}
+
+.a_destra {
+    float:right;
+}
+
+.margin_laterali {
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.menu {
+    display:inline;
+}
+
+li {
+    display:inline;
+    list-style: none;
+    font-size: 32px;
+    color:var(--menu);
+    margin-left:10px;
+}
+
+a {
+    color:var(--menu);
+}
+
+a:hover {
+    color:var(--h3-color);
+}
+
+img {
+    text-align: center;
+    margin: 10%;
+}

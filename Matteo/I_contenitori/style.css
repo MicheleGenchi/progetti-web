@@ -1,0 +1,46 @@
+div {
+    display:block;
+    border:1px solid;
+}
+
+#principale {
+    width:1300px;
+    margin: 0 auto;
+}
+
+.inline  {
+    display:inline-block;
+}
+
+#sinistra,#destra {
+    width:295px;
+}
+
+#centrale {
+    width:695px;
+}
+
+h4 {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.a_sinistra {
+    float:left;
+    width:50%;
+}
+
+.a_destra {
+    float:right;
+    width:50%;
+}
+
+.flex {
+    display:flex;
+}
+
+textarea {
+    margin:20px;
+    width:600px;
+    height:400px;
+}

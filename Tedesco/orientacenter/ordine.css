@@ -1,0 +1,24 @@
+/* su pc i corsi appaiono, prima foto e corso 
+*  e poi corso e foto
+*
+* su cellulare ora era brutto
+* con queste modifiche ora nel cellulare
+* sono sempre prima foto e poi corso
+*/
+
+
+@media screen and (max-width: 992px) {
+
+    .gb-container-3111e871 .gb-grid-wrapper {
+        display:flex;
+    }
+
+    .gb-container-3111e871 .gb-grid-wrapper>div.grid-column:nth-child(2) {
+        order:1;
+    }
+
+    .gb-container-3111e871 .gb-grid-wrapper>div.grid-column:nth-child(1) {
+        order:2;
+    }
+
+}

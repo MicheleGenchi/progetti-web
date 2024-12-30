@@ -1,0 +1,47 @@
+.caption {
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    float: left;   
+    margin: 0;    
+    padding: 0;    
+    position: relative;    
+    overflow: hidden;
+}
+.caption img {
+   float: left;
+   margin: 0;
+   padding: 0;
+   background: #fff;
+   border: none;
+   object-fit: contain;
+}
+.caption>.span {
+   font-size: 14px;
+   float: left;
+   margin: 0;
+   padding: 10px;
+   width: 100%;
+   color: black;
+   background: #8a8a8a; 
+   opacity: 0.7;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+.caption>.span strong {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 5px;
+}
+
+/*
+<LINK rel="stylesheet" href="https://www.brindisinewstoday.it/wp-content/themes/cosmoswp-child/banner.css">
+<div class="caption">
+<img src="https://www.brindisinewstoday.it/wp-content/uploads/2023/10/banner_cantinedimaggio.jpg" alt="" />
+<div class="span">
+<strong>LAVORA CON NOI</strong>
+Si ricercano profili di venditori commerciali
+</div>
+*/

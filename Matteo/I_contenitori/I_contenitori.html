@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>I Contenitori</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ricorda che se non ridimensioni il div, esso occuperà l'intera ampiezza disponibile -->
+    <div id="principale">
+        <H4>div principale</H4>
+        <div class="inline" id="sinistra">
+            <H4>div sinistra</H4>
+        </div>
+        <div class="inline" id="centrale">
+            <H4>div centrale</H4>
+            <div class="flex">
+                <div class="a_sinistra">
+                    <H4>float a sinistra</H4>
+                </div>
+                <div class="a_destra">
+                    <H4>float a destra</H4>
+                </div>
+            </div>
+        </div>
+        <div class="inline" id="destra">
+            <H4>div destra</H4>
+        </div>
+        <div class="flex">
+            <div class="a_sinistra">
+                <H4>Html</H4>
+                <hr><br>
+                <textarea>
+                    <div id="principale">
+                        <H4>div principale</H4>
+                        <div class="inline" id="sinistra">
+                            <H4>div sinistra</H4>
+                        </div>
+                        <div class="inline" id="centrale">
+                            <H4>div centrale</H4>
+                            <div class="flex">
+                                <div class="a_sinistra">
+                                    <H4>float a sinistra</H4>
+                                </div>
+                                <div class="a_destra">
+                                    <H4>float a destra</H4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline" id="destra">
+                            <H4>div destra</H4>
+                        </div>
+                    </div>
+                </textarea>
+            </div>
+            <div class="a_destra">
+                <H4>CSS</H4>
+                <hr><br>
+                <textarea>
+                    div {
+                        display:block;
+                        border:1px solid;
+                    }
+                    
+                    #principale {
+                        width:1300px;
+                        margin: 0 auto;
+                    }
+                    
+                    .inline  {
+                        display:inline-block;
+                    }
+                    
+                    #sinistra,#destra {
+                        width:295px;
+                    }
+                    
+                    #centrale {
+                        width:695px;
+                    }
+                    
+                    h4 {
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                    
+                    .a_sinistra {
+                        float:left;
+                        width:50%;
+                    }
+                    
+                    .a_destra {
+                        float:right;
+                        width:50%;
+                    }
+                    
+                    .flex {
+                        display:flex;
+                    }
+                    
+                    textarea {
+                        margin:20px;
+                        width:600px;
+                        height:400px;
+                    }
+                </textarea>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

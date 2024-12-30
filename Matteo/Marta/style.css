@@ -1,0 +1,61 @@
+body {
+    background-image:URL("marta.jpg"); 
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+h1{
+    text-align:center ; 
+    color:red;
+    background-color: yellow;
+}
+
+li {
+    font-weight:lighter;
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+} 
+
+li.title {
+    font-weight:bolder;
+}
+
+div#introduzione{
+    background-color:white; 
+    font-size:22px;
+    color:black;
+}
+
+.miniatura{ 
+    width:100px;
+    height:100px;
+}
+
+a {
+	font-weight:lighter;
+    font-size: 24px;
+    padding-left:30px;
+    vertical-align: top;
+}
+
+image {
+    width: 500px;
+    height: 500px;
+    float:left;
+}
+
+div.information {
+    background-color:white; 
+    font-size:22px;
+    color:black;
+}
+
+div ul {
+    display:inline-block;
+    background-color: cyan;
+    width: 550px;
+}
