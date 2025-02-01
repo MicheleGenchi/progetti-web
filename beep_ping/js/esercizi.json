@@ -1,0 +1,155 @@
+{
+    "Lunedì": [
+        {
+            "id": "1",
+            "esercizio": "LEG CURL",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "2",
+            "esercizio": "ADDUCTOR",
+            "serie": "3",
+            "ripetizioni": "15"
+        },
+        {
+            "id": "3",
+            "esercizio": "ABDUCTOR",
+            "serie": "3",
+            "ripetizioni": "15"
+        },
+        {
+            "id": "4",
+            "esercizio": "GLUTEUS MACHINE",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "5",
+            "esercizio": "PULLEY BASSO",
+            "serie": "4",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "6",
+            "esercizio": "PECK FLY PETTO",
+            "serie": "4",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "7",
+            "esercizio": "PLANK",
+            "serie": "2",
+            "ripetizioni": "30 min"
+        },
+        {
+            "id": "8",
+            "esercizio": "CRUNCH",
+            "serie": "3",
+            "ripetizioni": "15"
+        }
+    ],
+    "Martedì": [],
+    "Mercoledì": [
+        {
+            "id": "1",
+            "esercizio": "CHEST PRESS",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "2",
+            "esercizio": "VERTICAL TRACTION",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "3",
+            "esercizio": "SHOULDER PRESS",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "4",
+            "esercizio": "TRICIPITI AL CAVO",
+            "serie": "3",
+            "ripetizioni": "15"
+        },
+        {
+            "id": "5",
+            "esercizio": "TRICIPITI AL DAP",
+            "serie": "3",
+            "ripetizioni": "15"
+        },
+        {
+            "id": "6",
+            "esercizio": "LEG PRESS",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "7",
+            "esercizio": "SOLLEVAMENTI UNILATERALI",
+            "serie": "3",
+            "ripetizioni": "15"
+        },
+        {
+            "id": "8",
+            "esercizio": "CRUNCH",
+            "serie": "3",
+            "ripetizioni": "15"
+        }
+    ],
+    "Giovedì": [],
+    "Venerdì": [
+        {
+            "id": "1",
+            "esercizio": "CHEST PRESS",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "2",
+            "esercizio": "VERTICAL TRACTION",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "3",
+            "esercizio": "SHOULDER PRESS",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "4",
+            "esercizio": "TRICIPITI AL CAVO",
+            "serie": "3",
+            "ripetizioni": "15"
+        },
+        {
+            "id": "5",
+            "esercizio": "TRICIPITI AL DAP",
+            "serie": "3",
+            "ripetizioni": "15"
+        },
+        {
+            "id": "6",
+            "esercizio": "LEG PRESS",
+            "serie": "5",
+            "ripetizioni": "12"
+        },
+        {
+            "id": "7",
+            "esercizio": "SOLLEVAMENTI UNILATERALI",
+            "serie": "3",
+            "ripetizioni": "15"
+        },
+        {
+            "id": "8",
+            "esercizio": "CRUNCH",
+            "serie": "3",
+            "ripetizioni": "15"
+        }
+    ],
+    "Sabato": []
+}

@@ -1,28 +1,39 @@
-body {
-    background-image:URL("marta.jpg"); 
+:root {
+    --color-title: red;
+    --bk-color-title: yellow;
+    --sfondo: URL("marta.jpg"); 
+    --bk-menu: cyan;
 }
 
-ul {
+body {
+    background-image:var(--sfondo); 
+}
+
+* {
+    margin: 1%;
+    padding: 1%;
+}
+
+h1 { 
+    text-align:center ; 
+    color:var(--color-title);
+    background-color: var(--bk-color-title);
+}
+
+
+div.miomenu ul {
+    background-color: var(--bk-menu);
+    width:560px;
+    height:660px;
     list-style-type: none;
     text-align: left;
 }
 
-h1{
-    text-align:center ; 
-    color:red;
-    background-color: yellow;
-}
 
 li {
     font-weight:lighter;
-    font-size: 18px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    font-size: 24px;
 } 
-
-li.title {
-    font-weight:bolder;
-}
 
 div#introduzione{
     background-color:white; 
@@ -30,32 +41,40 @@ div#introduzione{
     color:black;
 }
 
-.miniatura{ 
-    width:100px;
-    height:100px;
+img.miniatura {
+    width:150px;
+    height:150px;
 }
 
-a {
-	font-weight:lighter;
-    font-size: 24px;
-    padding-left:30px;
-    vertical-align: top;
-}
-
-image {
-    width: 500px;
-    height: 500px;
+.a_sinistra {
     float:left;
 }
 
-div.information {
+img {
+    width: 400px;
+    height: 400px;
+    text-align:center;
+    vertical-align:middle; 
+}
+
+p.left {
+    text-align:left; 
+    width:50%; 
+}
+
+div.informa {
+    display:flex;
     background-color:white; 
     font-size:22px;
     color:black;
 }
 
-div ul {
+span>a {
     display:inline-block;
-    background-color: cyan;
-    width: 550px;
+    margin-top:60px;
+    background-color: aqua;
+    padding:10px;
+    font-size:22px;
+    border-radius: 7px;
 }
+
