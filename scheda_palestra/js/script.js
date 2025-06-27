@@ -24,9 +24,10 @@ function read_data(curr_giorno) {
             content += "<th>RIPETIZIONI</th>";
             content += "<th>FATTO</th>";
             content += "</tr>";
-            for (giorno in response) {
-                if (giorno==curr_giorno) {
-                    for (let esercizi of Object.values(response[giorno])) {
+            for (current in response) {
+                console.log(response[current]);
+                if (response[current].giorno==curr_giorno) {
+                    for (let esercizi of Object.values(response[current].esercizi)) {
                         content+="<tr>";
                         content+="<td>"+esercizi.id+"</td>";
                         content+="<td>"+esercizi.esercizio+"</td>";
