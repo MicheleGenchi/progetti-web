@@ -1,1 +1,324 @@
-[{"giorno":"Luned\u00ec","esercizi":[{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"}]},{"giorno":"Marted\u00ec","esercizi":[{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"}]},{"giorno":"Mercoled\u00ec","esercizi":[{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"}]},{"giorno":"Gioved\u00ec","esercizi":[{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"}]},{"giorno":"Venerd\u00ec","esercizi":[{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"}]},{"giorno":"Sabato","esercizi":[{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"},{"id":"8","esercizio":"CRUNCH","serie":"3","ripetizioni":"15"}]},{"giorno":null,"esercizi":[]}]
+[
+    {
+        "giorno": "Lunedì",
+        "esercizi": [
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            }
+        ]
+    },
+    {
+        "giorno": "Martedì",
+        "esercizi": [
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            }
+        ]
+    },
+    {
+        "giorno": "Mercoledì",
+        "esercizi": [
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            }
+        ]
+    },
+    {
+        "giorno": "Giovedì",
+        "esercizi": [
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            }
+        ]
+    },
+    {
+        "giorno": "Venerdì",
+        "esercizi": [
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            }
+        ]
+    },
+    {
+        "giorno": "Sabato",
+        "esercizi": [
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            },
+            {
+                "id": "8",
+                "esercizio": "CRUNCH",
+                "serie": "3",
+                "ripetizioni": "15"
+            }
+        ]
+    },
+    {
+        "giorno": null,
+        "esercizi": []
+    }
+]

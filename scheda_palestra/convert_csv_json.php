@@ -51,7 +51,7 @@ foreach ($array as $i => $data) {
 }
 
 $file = fopen('fileout.json', 'w');
-fwrite($file, json_encode($json,true));
+fwrite($file, json_encode($json,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT));
 print_r('Converted Successfully');
 
 fclose($file);
