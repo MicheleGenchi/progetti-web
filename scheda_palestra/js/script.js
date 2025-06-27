@@ -22,6 +22,7 @@ function read_data(curr_giorno) {
             content += "<th>ESERCIZIO</th>";
             content += "<th>SERIE</th>";
             content += "<th>RIPETIZIONI</th>";
+            content += "<th>FATTO</th>";
             content += "</tr>";
             for (giorno in response) {
                 console.log(giorno);
@@ -32,6 +33,7 @@ function read_data(curr_giorno) {
                         content+="<td>"+esercizi.esercizio+"</td>";
                         content+="<td>"+esercizi.serie+"</td>";
                         content+="<td>"+esercizi.ripetizioni+"</td>";
+                        content+="<td><input class='checkbox' type='checkbox'></td>";
                         content+="</tr>";
                     }
                 }

@@ -17,3 +17,7 @@ table#scheda tr th {
     color:beige;
     padding:10px;
 }
+
+.checkbox {
+     transform: scale(2.5);
+}
