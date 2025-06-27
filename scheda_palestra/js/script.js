@@ -15,7 +15,7 @@ function read_data(curr_giorno) {
         dataType: 'json',
         success: function (response) {
             console.log("%j", response);
-            //$('p#scheda').html(JSON.stringify(response));
+            $('p#scheda').html(JSON.stringify(response));
             var content = "<table id='scheda'>";
             content += "<tr>";
             content += "<th>ID</th>";
@@ -25,7 +25,6 @@ function read_data(curr_giorno) {
             content += "<th>FATTO</th>";
             content += "</tr>";
             for (giorno in response) {
-                console.log(giorno);
                 if (giorno==curr_giorno) {
                     for (let esercizi of Object.values(response[giorno])) {
                         content+="<tr>";

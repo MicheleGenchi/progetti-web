@@ -43,6 +43,7 @@ foreach ($array as $i => $data) {
             $single_esercizio->ripetizioni = $value;
             //print_r($single_esercizio);
             array_push($giorno->esercizi, $single_esercizio);
+            $single_esercizio = new Esercizio();
             $conta=0;
         }
         $conta++;
