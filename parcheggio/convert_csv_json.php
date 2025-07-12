@@ -1,20 +1,19 @@
 <?php
 
-class Esercizio
+class via
 {
     public $id;
-    public $esercizio;
-    public $serie;
-    public $ripetizioni;
+    public $via;
+    public $da;
+    public $a;
 }
 
 class Giorno
 {
     public $giorno;
-    public array $esercizi;
+    public array $vie;
 }
 
-$giorni_settimana=["Lunedì","Martedì","Mercodlì","Giovedì","Venerdì","Sabato","Domenica"];
 $csvData = file_get_contents("fileout.csv");
 $array = array_map("str_getcsv", explode("\n", $csvData));
 $json = [];
@@ -23,28 +22,28 @@ $json = [];
 foreach ($array as $i => $data) {
     $giorno = new Giorno();
     $giorno->giorno=$data[0];
-    $giorno->esercizi=[];
+    $giorno->vie=[];
     $conta = 0;
-    $single_esercizio = new Esercizio();
+    $via = new Via();
     foreach ($data as $x => $value) {
         if ($conta == 1) {
             //print_r(['id' => $value]);
-            $single_esercizio->id = $value;
+            $via->id = $value;
         }
         if ($conta == 2) {
             //print_r(['esercizio' => $value]);
-            $single_esercizio->esercizio = $value;
+            $via->via = $value;
         }
         if ($conta == 3) {
             //print_r(['serie' => $value]);
-            $single_esercizio->serie = $value;
+            $via->da = $value;
         }
         if ($conta == 4) {
             //print_r(['ripetizioni' => $value]);
-            $single_esercizio->ripetizioni = $value;
+            $via->a = $value;
             //print_r($single_esercizio);
-            array_push($giorno->esercizi, $single_esercizio);
-            $single_esercizio = new Esercizio();
+            array_push($giorno->vie, $via);
+            $via = new Via();
             $conta=0;
         }
         $conta++;

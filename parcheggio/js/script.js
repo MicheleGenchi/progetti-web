@@ -4,36 +4,35 @@ $(document).ready(function () {
         ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì',
             'Giovedì', 'Venerdì', 'Sabato'];
     $("h2#oggi").html(days[oggi.getDay()] + "&emsp;" + oggi.getDate() + "/" + (oggi.getMonth() + 1) + "/" + oggi.getFullYear());
-    read_data(days[oggi.getDay()]);
+    read_data(oggi.getDate());
     //read_data("Lunedì");
 });
 
 function read_data(curr_giorno) {
     $.ajax({
-        url: 'js/esercizi.json',
+        url: 'js/vie.json',
         type: 'GET',
         dataType: 'json',
         success: function (response) {
-            console.log("%j", response);
+            //console.log("%j", response);
             $('p#scheda').html(JSON.stringify(response));
             var content = "<table id='scheda'>";
             content += "<tr>";
             content += "<th>ID</th>";
-            content += "<th>ESERCIZIO</th>";
-            content += "<th>SERIE</th>";
-            content += "<th>RIPETIZIONI</th>";
-            content += "<th>FATTO</th>";
+            content += "<th>VIA</th>";
+            content += "<th>DA</th>";
+            content += "<th>A</th>";
             content += "</tr>";
             for (current in response) {
-                console.log(response[current]);
+                console.log(response[current].giorno);
+                console.log(curr_giorno);
                 if (response[current].giorno==curr_giorno) {
-                    for (let esercizi of Object.values(response[current].esercizi)) {
+                    for (let vie of Object.values(response[current].vie)) {
                         content+="<tr>";
-                        content+="<td>"+esercizi.id+"</td>";
-                        content+="<td>"+esercizi.esercizio+"</td>";
-                        content+="<td>"+esercizi.serie+"</td>";
-                        content+="<td>"+esercizi.ripetizioni+"</td>";
-                        content+="<td><input class='checkbox' type='checkbox'></td>";
+                        content+="<td>"+vie.id+"</td>";
+                        content+="<td>"+vie.via+"</td>";
+                        content+="<td>"+vie.da+"</td>";
+                        content+="<td>"+vie.a+"</td>";
                         content+="</tr>";
                     }
                 }
