@@ -14,9 +14,10 @@ class Giorno
     public array $esercizi;
 }
 
-
+$giorni_settimana=["Lunedì","Martedì","Mercodlì","Giovedì","Venerdì","Sabato","Domenica"];
 $csvData = file_get_contents("fileout.csv");
 $array = array_map("str_getcsv", explode("\n", $csvData));
+$json = [];
 //print_r($array);
 $json = [];
 foreach ($array as $i => $data) {
@@ -56,5 +57,3 @@ fwrite($file, json_encode($json,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JS
 print_r('Converted Successfully');
 
 fclose($file);
-
-

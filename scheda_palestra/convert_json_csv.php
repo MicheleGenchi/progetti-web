@@ -1,19 +1,28 @@
 <?php
-$jsonData = file_get_contents("js/esercizi.json");
-$jsonDecoded = json_decode($jsonData, true); // add true, will handle as associative array    
 
-$fh = fopen('fileout.csv', 'w');
-$conta=0;
-foreach ($jsonDecoded as $day => $esercizi) {
-    $conta=0;
-    $line[$conta]=$day;
-    foreach ($esercizi as $esercizio => $data) {
-      foreach ($data as $field => $value) {  
-        $conta++;
-        $line[$conta]=$value;
-      }   
+use function PHPSTORM_META\elementType;
+
+function getData(&$csv, $arr, $fh)
+{
+    if (is_array($arr)) {
+        foreach ($arr as $key => $value) {
+            getData($csv, $value, $fh);
+            if (!is_Array($value))
+                array_push($csv, $value);
+        }
     }
-    fputcsv($fh,$line);
-}   
+}
+
+$jsonData = file_get_contents(filename: "fileout.json");
+$jsonDecoded = json_decode($jsonData, true); // add true, will handle as associative array    
+$fh = fopen('fileout.csv', 'w');
+$csv=[];
+foreach ($jsonDecoded as $key => $data) {
+    getData($csv, $data, $fh);
+    //print_r($csv);
+    fputcsv($fh,$csv);
+    $csv=[];
+}
+
 fclose($fh);
-print_r('Converted Successfully');
+print_r("\rConverted Successfully");

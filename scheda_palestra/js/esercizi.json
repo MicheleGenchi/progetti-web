@@ -318,7 +318,14 @@
         ]
     },
     {
-        "giorno": null,
-        "esercizi": []
+        "giorno": "Domenica",
+        "esercizi": [
+            {
+                "id": "",
+                "esercizio": "",
+                "serie": "",
+                "ripetizioni": ""
+            }
+        ]
     }
 ]
