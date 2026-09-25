@@ -1,0 +1,75 @@
+:root {
+    --colore-sfondo: #ff1500;
+    --colore-testo: #333333;
+    --colore-selezione: #ffffff;
+    --colore-container: lightgrey;
+}
+
+.container {
+    background: var(--colore-container);
+    padding: 2em 5em;
+    width: 60%;
+    display: grid;
+    place-items: center;
+    /* Centra sia in orizzontale che in verticale */
+    margin:auto;
+}
+
+span {
+    color: var(--colore-sfondo);
+}
+
+ul {
+    list-style: none;
+    /* Rimuove i punti elenco */
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+ul li {
+    background-color: transparent;
+    /* Sfondo iniziale */
+    padding: 10px;
+    font-variant: small-caps;
+}
+
+ul li a {
+    color: var(--colore-testo);
+}
+
+/* Sfondo quando passi il mouse sopra (selezione/hover) */
+ul li:hover {
+    background-color: var(--colore-sfondo);
+    color: var(--colore-selezione);
+    /* Cambia con il colore che preferisci */
+}
+
+ul li:hover a {
+    color: var(--colore-selezione);
+    font-weight: 700;
+}
+
+/* Rimuove la sottolineatura da tutti i link della pagina */
+a {
+    text-decoration: none;
+    display: block;
+    /* Rende il link compatibile con ::first-letter */
+    font-size: 20px;
+    color:var(--colore-testo);
+}
+
+a::first-letter {
+    font-weight: bold;
+    font-size: 105%;
+}
+
+.h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 28px;
+    text-align: left;
+}

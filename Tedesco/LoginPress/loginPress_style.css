@@ -1,0 +1,127 @@
+:root {
+    --sfondo: url("https://www.barinewstoday.it/wp-content/uploads/2024/01/bari-cose-da-vedere-e-da-fare.jpg");
+   --logo: url("https://www.barinewstoday.it/wp-content/uploads/2024/01/cropped-Logo_bariNewsToday3.png");
+   --colore-principale: red;
+   --colore-principale-scuro: darkred;
+   --colore-secondario: white;
+   --colore-secondario-chiaro: #F3F3F3;
+   --colore-secondario-scuro: #757575;
+   --box-shadow: 2px 5px 5px darkred;
+   --border:1px solid black;
+   --border-radius: 10px 10px 10px 10px;
+   --font:  Arial, Helvetica, sans-serif;
+   }
+   
+   body.login {
+      background-image:var(--sfondo);
+     font-family: var(--font)!important;
+   }
+   
+   .login h1 a {
+      background-image:var(--logo);
+      width:100px;
+      height:100px;
+   }
+   
+   div#login {
+       background-color:var(--colore-secondario-chiaro);
+       padding:10px;
+    border-radius: var(--border-radius);
+   }
+   
+   .login form {
+       background: var(--colore-secondario);
+       padding: 30px 25px;
+       box-shadow: var(--box-shadow);
+     border-radius:var(--border-radius);
+   }
+   
+   .login label {
+       color: #2C3338;
+       font-size: 12px;
+       line-height: 14px;
+       margin: 0 0 10px;
+   }
+   
+   .login input[type="text"], .login input[type="password"] 
+   {
+       box-shadow: none;
+       border: var(--border);
+       background: #FFF;
+       border-radius: var(--border-radius);
+       padding-left: 5px;
+       margin-bottom: 20px;
+       margin-right: 0;
+   }
+   
+   input:hover, a:hover {
+     font-size: 14px!important;
+     font-weight:700!important;
+     zoom:1.1;
+   }
+   
+   input[type=checkbox]:focus, input[type=checkbox]:checked {
+       border-color: black;
+   }
+   
+   input[type=checkbox]:checked:before {
+       content: url(data:image/svg+xml;utf8,<svg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27><path%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%23B21F1F%27%2F><%2Fsvg>);
+       margin: -0.25rem 0 0 -0.275rem !important;
+   }
+
+   /*
+   content: url(data:image/svg+xml;utf8,
+   <svg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27>
+   <path%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill
+   %3D%27%23B21F1F%27%2F><%2Fsvg>);
+   
+   %23B21F1F => il colore della V nel checkbox é B21F1F
+   */ 
+   
+   .login #nav, .login  #backtoblog{
+       padding: 0;
+       display: block;
+       justify-content: space-between;
+       color: #2C3338;
+   }
+   
+   .login #nav>a:hover, .login  #backtoblog>a:hover {
+       color:  var(--colore-principale-scuro);
+   }
+   
+   .login #backtoblog:hover:focus, .login #nav:hover:focus
+   {
+       font-weight: bold;
+       color:var(--colore-principale);
+   }
+   
+   .login p input[type="submit"], .wp-core-ui.login .button-group.button-large .button, .wp-core-ui.login .button.button-large, .wp-core-ui.login .button-primary, .wp-core-ui #login .button-primary 
+    {
+        font-size: 13px;
+        border:2px solid var(--colore-principale-chiaro);
+        border-radius: 18px;
+        background-color: var(--colore-principale-scuro);
+    }
+   
+   
+   .copyRight {
+      background-color: var(--colore-secondario-scuro)!important;
+   }
+   
+   .copyRight:hover {
+      background-color: var(--colore-principale-scuro)!important;
+   }
+   
+   p#copyright {
+       color: #FFF;
+   }
+   
+   p#copyright>a {
+       color: #FFF;
+   }
+   
+   p#copyright>a:hover {
+     font-size: 14px!important;
+     font-weight:700!important;
+     zoom:1.1;
+   }

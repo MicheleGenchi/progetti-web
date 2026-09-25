@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore Checklist Multi-Colonna</title>
+    <link rel="icon" type="image/x-icon" href="img/spesa.png">
+    <link href="css/spesa.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <img src="img/spesa.jpeg" alt="logo" width="96" height="96" />
+    <h1 style="margin-top:-70px;">La Mia Checklist</h1>
+
+    <div id="errorLog" class="error-message"></div>
+
+    <div class="card upload-section">
+        <label class="custom-file-upload">
+            <input type="file" id="csvFileInput" accept=".csv,.txt">
+            Carica la tabella CSV
+        </label>
+        <div id="fileInfo" style="margin-top: 10px; font-size: 13px; color: #718096;"></div>
+    </div>
+
+    <div id="columnSelectSection" class="card column-select-section">
+        <span class="column-select-title">Seleziona quali colonne mostrare nella checklist:</span>
+        <div id="checkboxGroup" class="checkbox-group"></div>
+
+        <div style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px; text-align: left;">
+            <label for="valueColumnSelect" style="font-weight: 600; color: #34495e;">Colonna con il valore numerico
+                (Totale):</label>
+            <select id="valueColumnSelect"
+                style="padding: 6px; margin-left: 10px; border-radius: 4px; border: 1px solid #ccc;"></select>
+        </div>
+    </div>
+
+    <div class="card">
+        <div id="checklist" class="empty-state">Nessun file caricato. Seleziona un file CSV per iniziare.</div>
+        
+        <div id="counterSection" class="counter-section">
+            <div class="counter-row">
+                <span id="counterText">Spuntati: 0 su 0 (0%)</span>
+                <span id="valueText" class="value-box">Somma Valori: 0</span>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/spesa.js"></script>
+</body>
+
+</html>

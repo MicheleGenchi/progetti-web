@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Anagrafica</title>
+    
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- JavaScript -->
+    <script src="js/jquery-1.7.1.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){   
+    
+		//When btn is clicked
+		$(".btn-responsive-menu").click(function() {
+			$("#mainmenu").toggleClass("show");
+		
+		});
+    
+    });
+    </script>
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+ 
+</head>
+<body>
+    <div id="wrapper" class="nofloat">
+        <header id="header" class="floatsinistra">
+
+            <h1 id="site-title"><span class="icon"></span><a href="#">&thinsp;CURRICULUM VITAE <span>"MICHELE GENCHI"</span></a></h1>
+
+            <div class="btn-responsive-menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+
+        </header> <!-- #header -->
+
+        <div data-include="menu.html"></div>
+        <div id="main">
+           <img class="floatsinistra" src="image/ID_20170221091939.jpg" alt="mia foto"></img>
+           <div id="content" class="flaotdestra">
+                <h1 class="testo-capolettera"><span class="capolettera_2righe">I</span>NFORMAZIONI</h1>
+                <h1>PERSONALI</h1>
+                <table>
+                    <tr><th>Nome</th><td>Michele</td></tr>
+                    <tr><th>Cognome</th><td>Genchi</td></tr>
+                    <tr><th>Indirizzo</th><td>via Dante Alighieri n.205, 74121 Taranto</td></tr>
+                    <tr><th>Telefono</th><td>3914898303</td></tr>
+                    <tr><th>E-mail</th><td>cell.mgenchi@gmail.com</td></tr>
+                    <tr><th>Nazionalità</th><td>Italiana</td></tr>
+                    <tr><th>Data di nascita</th><td>Michele</td></tr>
+                    <tr><th>Patente</th><td>B</td></tr>
+                </table>
+           </div>
+    </div>
+</body>
+<script src="js/include.js"></script>
+</html>
+
+
+	

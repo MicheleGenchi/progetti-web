@@ -1,0 +1,494 @@
+[
+            {
+                "id": "S3czL1ozMExKQT09",
+                "domain": "londontoday.it",
+                "status": "SCADUTO",
+                "expires": "2024-01-11T15:58:08-06:00"
+            },
+            {
+                "id": "S3czL1ozMExJZz09",
+                "domain": "manchestertoday.it",
+                "status": "SCADUTO",
+                "expires": "2024-01-11T16:01:23-06:00"
+            },
+            {
+                "id": "S3c3eFpYOEpJdz09",
+                "domain": "corsiagevolati.it",
+                "status": "IN_SCADENZA",
+                "expires": "2024-03-17T06:55:10-05:00"
+            },
+            {
+                "id": "S3c3eGFuTVBJZz09",
+                "domain": "laprotestagiornale.com",
+                "status": "IN_SCADENZA",
+                "expires": "2024-03-20T10:53:59-05:00"
+            },
+            {
+                "id": "S3c3eGFuTVBJQT09",
+                "domain": "laprotestagiornale.it",
+                "status": "IN_SCADENZA",
+                "expires": "2024-03-20T10:54:04-05:00"
+            },
+            {
+                "id": "S3c3eGFuTVBMdz09",
+                "domain": "theprotestjournal.com",
+                "status": "IN_SCADENZA",
+                "expires": "2024-03-20T10:54:34-05:00"
+            },
+            {
+                "id": "S3c3eGFuTU9KZz09",
+                "domain": "theprotestjournal.it",
+                "status": "IN_SCADENZA",
+                "expires": "2024-03-20T10:54:43-05:00"
+            },
+            {
+                "id": "S3czMVkzb01KUT09",
+                "domain": "adessodonna.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-09T15:20:53-06:00"
+            },
+            {
+                "id": "S3czMVkzb01KQT09",
+                "domain": "adessodonna.org",
+                "status": "ATTIVO",
+                "expires": "2024-11-09T15:20:57-06:00"
+            },
+            {
+                "id": "S3czL1ozMEVMdz09",
+                "domain": "alessandriatoday.com",
+                "status": "ATTIVO",
+                "expires": "2025-01-11T16:17:46-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0pMdz09",
+                "domain": "bandierabianca.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:09:56-06:00"
+            },
+            {
+                "id": "S3czeVluMEpJQT09",
+                "domain": "barinewstoday.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-19T16:08:39-06:00"
+            },
+            {
+                "id": "S3dEL1pIOE1JZz09",
+                "domain": "barinewstoday.it",
+                "status": "ATTIVO",
+                "expires": "2024-10-06T16:49:57-05:00"
+            },
+            {
+                "id": "S3czMVpYZ0lKZz09",
+                "domain": "beecology.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:12:47-06:00"
+            },
+            {
+                "id": "S3czMFozb0ZKUT09",
+                "domain": "bocconibusinessschool.eu",
+                "status": "ATTIVO",
+                "expires": "2024-11-04T05:03:47-06:00"
+            },
+            {
+                "id": "S3czMFozb0VJdz09",
+                "domain": "bocconiedizioni.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-04T05:24:24-06:00"
+            },
+            {
+                "id": "S3czMFozNExMZz09",
+                "domain": "bocconiedizioni.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-04T11:42:54-06:00"
+            },
+            {
+                "id": "S3czeFpYNEtJdz09",
+                "domain": "bocompany.it",
+                "status": "ATTIVO",
+                "expires": "2024-12-22T03:34:22-06:00"
+            },
+            {
+                "id": "S3czeFpYNEtKZz09",
+                "domain": "brokerageoperationscompany.com",
+                "status": "ATTIVO",
+                "expires": "2024-12-22T03:32:50-06:00"
+            },
+            {
+                "id": "S3czeFpYNEtKUT09",
+                "domain": "brokerageoperationscompany.it",
+                "status": "ATTIVO",
+                "expires": "2024-12-22T03:32:54-06:00"
+            },
+            {
+                "id": "S3czMFlIMElKUT09",
+                "domain": "casaeditricebocconi.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-03T18:55:40-06:00"
+            },
+            {
+                "id": "S3czMFlIMElKQT09",
+                "domain": "casaeditricebocconi.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-03T18:55:44-06:00"
+            },
+            {
+                "id": "S3czMVpYa1BKQT09",
+                "domain": "chietioggi.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T04:13:00-06:00"
+            },
+            {
+                "id": "S3czMVpYa1BJdz09",
+                "domain": "chietioggi.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T04:13:04-06:00"
+            },
+            {
+                "id": "S3cvM1pIZ0pKQT09",
+                "domain": "cpgreen.it",
+                "status": "ATTIVO",
+                "expires": "2024-04-20T05:44:18-05:00"
+            },
+            {
+                "id": "S3czMVpYZ0ZMdz09",
+                "domain": "culturalcommunity.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:39:27-06:00"
+            },
+            {
+                "id": "S3czMVkzb05JQT09",
+                "domain": "donnaimpresatoday.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-09T15:15:19-06:00"
+            },
+            {
+                "id": "S3czMVpYa05JUT09",
+                "domain": "economialibera.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:56:01-06:00"
+            },
+            {
+                "id": "S3czMVpYa05JQT09",
+                "domain": "economialibera.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:56:05-06:00"
+            },
+            {
+                "id": "S3czeVpYTUpKUT09",
+                "domain": "fiscoconsulting.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-24T04:19:19-06:00"
+            },
+            {
+                "id": "S3d6L1pId0VJQT09",
+                "domain": "fondazionebocconibusinessschool.com",
+                "status": "ATTIVO",
+                "expires": "2024-10-10T11:24:26-05:00"
+            },
+            {
+                "id":"",
+                "domain": "fondazionebocconibusinessschool.eu",
+                "status": "ATTIVO",
+                "expires":"external domain"
+            },
+            {
+                "id": "S3cvMFpYOE1JQT09",
+                "domain": "goldenhours.it",
+                "status": "ATTIVO",
+                "expires": "2024-04-28T03:37:58-05:00"
+            },
+            {
+                "id": "S3d6L1luc0xKdz09",
+                "domain": "ilcorrieredelleconomia.com",
+                "status": "ATTIVO",
+                "expires": "2024-10-04T10:17:07-05:00"
+            },
+            {
+                "id": "S3czMVpYZ0tJZz09",
+                "domain": "ilmilanesetoday.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:30:16-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0tJQT09",
+                "domain": "ilmilanesetoday.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:30:19-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0ZJZz09",
+                "domain": "ilmondo24ore.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:36:54-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0ZJUT09",
+                "domain": "ilmondo24ore.eu",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:36:58-06:00"
+            },
+            {
+                "id": "S3czL1ozMEtMdz09",
+                "domain": "italianuk.com",
+                "status": "ATTIVO",
+                "expires": "2025-01-11T16:07:04-06:00"
+            },
+            {
+                "id": "S3czL1ozMEZKZz09",
+                "domain": "italianuk.eu",
+                "status": "ATTIVO",
+                "expires": "2025-01-11T16:07:12-06:00"
+            },
+            {
+                "id": "S3czL1ozMEZKdz09",
+                "domain": "italianuk.it",
+                "status": "ATTIVO",
+                "expires": "2025-01-11T16:07:09-06:00"
+            },
+            {
+                "id": "S3czMVpYa09KZz09",
+                "domain": "laquilaoggi.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T04:15:44-06:00"
+            },
+            {
+                "id": "S3czMVpYa09KUT09",
+                "domain": "laquilaoggi.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T04:15:47-06:00"
+            },
+            {
+                "id": "S3czMVpYa01Jdz09",
+                "domain": "lascuolatoday.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T04:01:35-06:00"
+            },
+            {
+                "id": "S3czMVpYa01JZz09",
+                "domain": "lascuolatoday.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T04:01:40-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0lMZz09",
+                "domain": "lavocedelsud.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:17:37-06:00"
+            },
+            {
+                "id": "S3cveVkzb0xKQT09",
+                "domain": "logoutstore.it",
+                "status": "ATTIVO",
+                "expires": "2024-05-10T21:59:59-05:00"
+            },
+            {
+                "id": "S3czL1ozMExJdz09",
+                "domain": "londontoday.eu",
+                "status": "ATTIVO",
+                "expires": "2025-01-11T15:58:10-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0VKdz09",
+                "domain": "lorapolitica.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:43:08-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0VKZz09",
+                "domain": "lorapolitica.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:43:12-06:00"
+            },
+            {
+                "id": "S3czMGFuTUVJQT09",
+                "domain": "mammaimpresa.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-09T15:10:19-06:00"
+            },
+            {
+                "id": "S3czMVkzd0lJdz09",
+                "domain": "mammaimpresa.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-10T05:27:25-06:00"
+            },
+            {
+                "id": "S3czL1ozMExJUT09",
+                "domain": "manchestertoday.eu",
+                "status": "ATTIVO",
+                "expires": "2025-01-11T16:01:25-06:00"
+            },
+            {
+                "id": "S3czMVpYa0tKdz09",
+                "domain": "manduriatoday.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T05:03:02-06:00"
+            },
+            {
+                "id": "S3czMVpYa0tKZz09",
+                "domain": "manduriatoday.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T05:03:05-06:00"
+            },
+            {
+                "id": "S3czMFozb0lKdz09",
+                "domain": "mezzogiornotoday.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-04T04:22:21-06:00"
+            },
+            {
+                "id": "S3cveFpITUtKQT09",
+                "domain": "milanogoldclub.com",
+                "status": "ATTIVO",
+                "expires": "2024-06-14T07:51:46-05:00"
+            },
+            {
+                "id": "S3cveFpITUtJZz09",
+                "domain": "milanogoldclub.it",
+                "status": "ATTIVO",
+                "expires": "2024-06-14T07:51:55-05:00"
+            },
+            {
+                "id": "S3czMVpYZ0tKQT09",
+                "domain": "milanoinnova.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:27:46-06:00"
+            },
+            {
+                "id": "S3czeVluME9KZz09",
+                "domain": "millionaireluxurystyle.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-19T15:45:58-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0xJZz09",
+                "domain": "notizianazionale.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:20:36-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0xJUT09",
+                "domain": "notizianazionale.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:20:41-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0tKdz09",
+                "domain": "parlanoledonne.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:24:46-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0tKZz09",
+                "domain": "parlanoledonne.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:24:51-06:00"
+            },
+            {
+                "id": "S3czMVpYa0pKZz09",
+                "domain": "pescaraoggi.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T04:23:18-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0VJQT09",
+                "domain": "romaefinanza.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:47:31-06:00"
+            },
+            {
+                "id": "S3czMVpYZ0VMdz09",
+                "domain": "romaefinanza.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T03:47:35-06:00"
+            },
+            {
+                "id": "S3cveFpYd0lMZz09",
+                "domain": "romagoldclub.com",
+                "status": "ATTIVO",
+                "expires": "2024-06-13T05:38:44-05:00"
+            },
+            {
+                "id": "S3cveFpYd0lMdz09",
+                "domain": "romagoldclub.it",
+                "status": "ATTIVO",
+                "expires": "2025-06-13T05:38:40-05:00"
+            },
+            {
+                "id": "S3czMFlIMEtKUT09",
+                "domain": "runwayfashiontoday.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-03T19:16:43-06:00"
+            },
+            {
+                "id": "S3czMFlIMEtKQT09",
+                "domain": "runwayfashiontoday.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-03T19:16:48-06:00"
+            },
+            {
+                "id": "S3d6K2FuOFBKdz09",
+                "domain": "sceglibbs.com",
+                "status": "ATTIVO",
+                "expires": "2024-10-03T05:17:02-05:00"
+            },
+            {
+                "id": "S3cvM1pIc1BJZz09",
+                "domain": "sidacostruzioni.it",
+                "status": "ATTIVO",
+                "expires": "2024-04-20T03:47:10-05:00"
+            },
+            {
+                "id": "S3czeVpIMFBMZz09",
+                "domain": "smart-bit-exchange.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-24T16:44:07-06:00"
+            },
+            {
+                "id": "S3czMFozb0lMdz09",
+                "domain": "sportellopmi.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-04T04:27:36-06:00"
+            },
+            {
+                "id": "S3cvMmEzME9KUT09",
+                "domain": "studioglobalservices.com",
+                "status": "ATTIVO",
+                "expires": "2024-04-13T03:23:21-05:00"
+            },
+            {
+                "id": "",
+                "domain": "tarantotoday.com",
+                "status": "ATTIVO",
+                "expires":"is_external"
+            },
+            {
+                "id": "S3czMVpYa0pJUT09",
+                "domain": "teramooggi.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T04:26:55-06:00"
+            },
+            {
+                "id": "S3czMVpYa0pJQT09",
+                "domain": "teramooggi.it",
+                "status": "ATTIVO",
+                "expires": "2024-11-15T04:26:59-06:00"
+            },
+            {
+                "id": "S3czeVluMFBMZz09",
+                "domain": "traptopia.com",
+                "status": "ATTIVO",
+                "expires": "2024-11-19T15:38:49-06:00"
+            },
+            {
+                "id": "S3czeFluNFBKdz09",
+                "domain": "worldservicesgroup.it",
+                "status": "ATTIVO",
+                "expires": "2024-12-16T09:23:04-06:00"
+            }
+        ]
+
+
+
+
+
+

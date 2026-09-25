@@ -1,0 +1,11 @@
+div {
+    background-color: black;
+}
+p > span{
+    color:white;
+}
+
+div > p {
+    color:red;
+}
+

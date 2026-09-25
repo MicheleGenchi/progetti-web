@@ -1,0 +1,127 @@
+<HTML>
+    <HEAD>
+        <title>prove</title>
+        <script>
+            var d=new Date();
+            var iday=1;
+            function mioAlert(e, visible) {
+                var node="<br><div id='mioAlert'>la mia professione"+ 
+                    " è "+e.dataset.professione+"</div>";
+                if (visible=="hide") {
+                    document.getElementById("mioAlert").remove();
+                } else
+                    if (!document.contains(document.getElementById("mioAlert")))
+                       e.insertAdjacentHTML("afterend", node);
+            }
+
+            function getMonthName(month){
+                d.setFullYear(document.getElementById('year').value);
+                d.setMonth(month-1);
+                const monthName = d.toLocaleString("default", {month: "long"});
+                getLastDay(month)
+                return monthName;
+            }
+
+            function getLastDay(month) {
+                const lastDayOfMonth = new Date(d.getFullYear(), d.getMonth()+1, 0).getDate();
+                document.getElementById("day").setAttribute("max", lastDayOfMonth);
+                document.getElementById("day").value=1;
+                document.getElementById("lDay").innerHTML="1";
+            }
+
+            function verificaBisestile(day) {
+                d.setDate(day);
+                isDomenica();
+                ferialeFestivo();
+                document.getElementById('lDay').innerHTML = day;
+                if (day=='29' && d.getMonth=='1') 
+                    Alert("Questo è un anno bisestile!");
+                    //document.getElementById("lDay").style.color="red";
+            }
+
+             function ferialeFestivo() {
+                var festivo="red";
+                var feriale="black";
+                document.getElementById('lDay').style.color=(d.getDay()==0)?festivo:feriale;
+                document.getElementById('dayInfo').style.color=(d.getDay()==0)?festivo:feriale;
+
+             } 
+
+             function isDomenica() {
+                switch (d.getDay()) {
+                  case 1: case 2: case 3: case 4: case 5: document.getElementById('dayInfo').innerHTML="giorno lavorativo";
+                      break;
+                  case 6: document.getElementById('dayInfo').innerHTML="Sabato";
+                    break;
+                  case 0: document.getElementById('dayInfo').innerHTML="Domenica";
+                      break;
+                }
+             }
+
+             function initialize() {
+                 d=new Date(1900,0,1);
+                 iday=1;
+             }
+
+             function uniqueDate(days) {
+                 //alert("days = "+days+ "  iday = "+iday);
+                if (parseInt(days)>iday) {
+                    d.setDate(d.getDate()+1);
+                } else {
+                    d.setDate(d.getDate()-1);
+                }
+                iday=parseInt(days);
+                document.getElementById("lUniqueDate").innerHTML=d.toLocaleDateString();
+             }
+        </script>
+
+    </HEAD>
+    <Body onload="initialize()">
+        <div>
+            <p>
+                <label>Anno:</label>
+                <input type="Number" id="year" value="1900" min="1900" max="2100" 
+                    oninput="document.getElementById('lYear').innerHTML = this.value" />
+                <label id="lYear"></label>
+            </p>
+            <p>
+                <label>Mese:</label>
+                <input type="Number" id="month" value="1" min="1" max="12" 
+                    oninput="document.getElementById('lMonth').innerHTML = 
+                    getMonthName(this.value)" />
+                <label id="lMonth"></label>
+            </p>
+            <p>
+                <label>Giorni:</label>
+                <input type="Number" id="day" value="1" min="1" max="31"
+                    oninput="verificaBisestile(this.value)"/>
+            </p>
+            <p><span id='dayInfo'></span>  <span id="lDay"></span></p>
+
+            <p>
+                <input id="uniqueDate" type="number" value="1" min="1" max="1000" 
+                oninput="uniqueDate(this.value)" />
+                <label id="lUniqueDate"></label>
+            </p>
+        </div>
+        <p id="mioNome" data-professione="sviluppatore"
+            onmouseover="mioAlert(this, 'show')"
+            onmouseout="mioAlert(this, 'hide')">
+            Michele Genchi 
+        </p>
+       
+    </Body>    
+<style>
+    #mioAlert {
+        display: inline;
+        padding : 20px;
+        background-color: rgb(143, 147, 148);
+        color: White;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        font-weight: bold;
+    }
+
+</style>
+</HTML>

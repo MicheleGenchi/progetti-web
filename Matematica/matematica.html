@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matematica</title>
+<link rel="icon" type="image/x-icon" href="images/matematica.ico">
+</head>
+
+<style>
+	* {
+    	font-size:24px;
+        box-sizing: border-box;
+    }
+
+    img {
+        width:110px;
+        height:100px;
+    }
+
+    input[type="checkbox"] {
+  		transform:scale(2, 2);
+	}
+
+	body {
+        padding:auto;
+	}
+
+    .grid-container {
+        display: grid;
+        width:90%;
+        margin:auto;
+        grid-template-columns: auto auto;
+        background-color: white;
+        gap: 5%;
+    }
+
+    #note .grid-container {
+        display: grid;
+        grid-template-columns: 15% auto;
+        background-color: white;
+        margin-top:10%;
+        height: 50%;
+        gap: 5%;
+    }
+
+    #head {
+        display:flex;
+        flex-direction:row;
+    }
+    .content {
+        grid-area: main;
+    }
+
+    table {
+        margin-top:10px;
+        border:2px solid;
+        padding:10px 40px;
+        width:100%
+        resize:both;
+        overflow:auto;
+    }
+
+
+
+    table,th,td {
+    	border:1px solid grey;
+        padding:7px 10px;
+        text-align: center;
+    }
+
+    table#spunte {
+        width:100%;
+        border:none;
+    }
+
+    table#spunte th, table#spunte td {
+        margin:auto;
+        padding:auto;
+        border-style:none;
+        /*text-align:center;*/
+        color:red;
+        font-size:28px;
+    }
+
+    table#spunte td {
+        color:black;
+        font-weight:bolder;
+    }
+
+    h1 {
+        font-size:28px;
+        text-transform: uppercase;
+        width:90%;
+        margin:auto;
+    }
+    h1#title {
+        font-size:48px;
+        text-transform: uppercase;
+        margin-top:20px;
+    }
+    .red {
+    	background-color:red;
+    }
+    .orange {
+    	background-color:orange;
+    }
+    .yellow {
+    	background-color:yellow;
+    }
+    .green {
+    	background-color:lightgreen;
+    }
+    .cyan {
+    	background-color:cyan;
+    }
+    .violet {
+    	background-color:violet;
+    }
+    .purple {
+    	background-color:purple;
+    }
+    .fuchsia {
+    	background-color:fuchsia;
+    }
+    .palevioletred {
+    	background-color:palevioletred;
+    }
+    .thistle {
+       background-color:thistle;
+    }
+    .hotpink {
+    	background-color:hotpink;
+    }
+    .uncheckable {
+        pointer-events: none;
+        opacity: 0.6; /* Opzionale: per dare un effetto visivo di disabilitato */
+ }
+
+    hr {
+        border: 0;
+        clear:both;
+        display:block;
+        width: 96%;
+        background-color:grey;
+        height: 1px;
+    }
+
+    button {
+        margin-left: 25px;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .header {grid-area: 6 / span 6;}
+        .menu {grid-area: 2 / span 1;}
+        .content {grid-area: 2 / span 4;}
+        .facts {grid-area: 2 / span 1;}
+        .footer {grid-area: 3 / span 6;}
+        #note {margin:auto;padding:auto;}
+        #note .grid-container {grid-template-columns: auto;}
+    }
+}
+
+</style>
+<body>
+<div id="head" >
+<img src="images/logo.jpg" alt="logo"/>
+<h1 id="title">MATEMATICA</h1>
+</div>
+<table id="spunte" class="content">
+<tr><th>SPUNTANTI</th><td id="spuntati"></td>
+<th>NON SPUNTANTI</th><td id="non_spuntati"></td>
+</tr>
+</table>
+<div id="main" class="grid-container">
+<table id="check">
+<tr>
+	<th rowspan="2">unità</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th>
+</tr>
+<tr class="red">
+    <td class="checkable"><input type="checkbox" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="red">
+	<th>10</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="orange">
+	<th>20</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="yellow">
+	<th>30</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="green">
+	<th>40</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="cyan">
+	<th>50</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="violet">
+	<th>60</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="purple">
+	<th>70</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="palevioletred">
+	<th>80</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="thistle">
+	<th>90</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+<tr class="hotpink">
+	<th>100</th>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+	<td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+    <td><input type="checkbox" onclick="contaSpunte()" /></td>
+</tr>
+</table>
+<div id="note" class="facts">
+    <h1>
+        Le operazioni con 0
+    </h1>
+    <hr/>
+    <div class="grid-container">
+        <div><b>Addizione</b></div><div>=> qualsiasi numero + 0 = il numero stesso</div>
+        <div><b>Sottrazione</b></div><div>=> qualsiasi numero - 0 = il numero stesso</div>
+        <div><b>Moltiplicazione</b></div><div>=> A qualsiasi numero * 0 = 0</div>
+        <div><b>Divisione</b></div><div>=> impossibile</div>
+    </div>
+</div>
+</div>
+<script>
+function contaSpunte() {
+    // Conta quanti elementi con classe 'scelta' sono spuntati
+    var selezionati = document.querySelectorAll('input[type="checkbox"]:checked').length;
+
+    // Mostra il risultato
+    document.getElementById('spuntati').innerText = selezionati;
+    document.getElementById('non_spuntati').innerText = 100-selezionati;
+}
+</script>
+</body>
+</html>

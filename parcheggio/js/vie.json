@@ -1,0 +1,100 @@
+[
+    {
+        "giorno": "5",
+        "vie": [
+            {
+                "id": "1",
+                "via": "Cagliari",
+                "da": "Dante",
+                "a": "Alto Adige"
+            },
+            {
+                "id": "2",
+                "via": "Plinio",
+                "da": "Dionisio",
+                "a": "Cagliari"
+            },
+            {
+                "id": "3",
+                "via": "Solito",
+                "da": "Dante",
+                "a": "Alto Adige"
+            },
+            {
+                "id": "",
+                "via": "",
+                "da": "",
+                "a": ""
+            }
+        ]
+    },
+    {
+        "giorno": "9",
+        "vie": [
+            {
+                "id": "1",
+                "via": "Salinella",
+                "da": "Plateja",
+                "a": "Dante"
+            },
+            {
+                "id": "2",
+                "via": "Solito",
+                "da": "Plateja",
+                "a": "Dante"
+            },
+            {
+                "id": "3",
+                "via": "Cicerone",
+                "da": "Salinella",
+                "a": "O.Flacco"
+            },
+            {
+                "id": "",
+                "via": "",
+                "da": "",
+                "a": ""
+            }
+        ]
+    },
+    {
+        "giorno": "10",
+        "vie": [
+            {
+                "id": "1",
+                "via": "Cagliari",
+                "da": "Dante",
+                "a": "C.Battisti"
+            },
+            {
+                "id": "2",
+                "via": "Catania",
+                "da": "Dante",
+                "a": "Siracusa"
+            },
+            {
+                "id": "3",
+                "via": "Dante",
+                "da": "Pio XII",
+                "a": "Cagliari"
+            },
+            {
+                "id": "4",
+                "via": "Terni",
+                "da": "Solito",
+                "a": "Catania"
+            }
+        ]
+    },
+    {
+        "giorno": "12",
+        "vie": [
+            {
+                "id": "1",
+                "via": "Dante",
+                "da": "Cagliari",
+                "a": "Magna Grecia"
+            }
+        ]
+    }
+]

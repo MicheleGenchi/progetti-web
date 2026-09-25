@@ -1,0 +1,31 @@
+ul>li>p {
+    vertical-align: bottom;
+}
+
+ul#contatti {
+    list-style: none;
+}
+
+ul#contatti img {
+    width: 32px;
+    height: 32px;
+    margin-right: 40px;
+}
+
+
+ul#contatti>li>div {
+    display: flex;
+}
+
+
+ul#contatti>li>div>a:first-child,
+ul#contatti>li>div>img {
+    float:left;
+}
+
+ul#contatti>li>div>a>a, 
+ul#contatti>li>div>p,
+ul#contatti>li>div>div
+{
+    float:right;
+}
