@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web</title>
+  <link rel="stylesheet" href="../../../resources/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="../../../index.ico">
+  <link rel="stylesheet" href="../../index.css">
+</head>
+
+<body>
+  <h1 class="h1">Benvenuto</h1>
+  <center>
+    <p>Clicca sui link per caricare</p>
+  </center>
+  <div class="container">
+    <h2 class="h2">Programmatore : <p><span id="nome">Michele Genchi</span></p>
+    </h2>
+
+    <!-- Campo per l'URL -->
+    <label for="curl">URL della chiamata:</label>
+    <textarea id="curl" name="curl" placeholder="http://ddns.net" rows="2" class="form-control mb-3"></textarea>
+    <!-- NUOVO: Selezione Metodo HTTP -->
+    <label class="d-block mb-2 font-weight-bold">Metodo HTTP:</label>
+    <div class="mb-3">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="metodoHttp" id="metodoGet" value="GET" checked>
+        <label class="form-check-label" for="metodoGet">GET</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="metodoHttp" id="metodoPost" value="POST">
+        <label class="form-check-label" for="metodoPost">POST</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="metodoHttp" id="metodoPut" value="PUT">
+        <label class="form-check-label" for="metodoPut">PUT</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="metodoHttp" id="metodoDelete" value="DELETE">
+        <label class="form-check-label" for="metodoDelete">DELETE</label>
+      </div>
+    </div>
+    <!-- NUOVO: Campo per il Payload -->
+    <label for="payload">Payload (JSON da inviare - opzionale):</label>
+    <textarea id="payload" name="payload" placeholder='{ "filtro": "Italia" }' rows="5" class="form-control mb-3"
+      disabled></textarea>
+
+    <hr>
+    <button id="invio" type="button" class="btn btn-primary btn-lg">INVIA</button>
+    <br><br>
+
+    <label for="titolo">Esito</label>
+    <p id="titolo"></p>
+
+    <label for="Risposta">Risposta</label>
+    <textarea id="Risposta" name="Risposta" rows="10" class="form-control"></textarea>
+  </div>
+
+</body>
+<script src="../../../resources/js/jquery-3.6.0.min.js"></script>
+<script>
+  // Gestione della disattivazione della textarea del Payload in base al metodo
+  $("input[name='metodoHttp']").change(function () {
+    let metodo = $(this).val();
+
+    if (metodo === "GET") {
+      // Disattiva la textarea del payload e opzionalmente la svuota
+      $("#payload").prop("disabled", true).addClass("bg-light");
+      $("#payload").attr("placeholder", "Il metodo GET non supporta l'invio di un payload nel body.");
+    } else {
+      // Riattiva la textarea per POST, PUT, DELETE
+      $("#payload").prop("disabled", false).removeClass("bg-light");
+      $("#payload").attr("placeholder", '{ "country": ["Italia"] }');
+    }
+  });
+
+
+  $("#invio").click(function () {
+    //pulisci l'area di testo Risposta
+    $('#Risposta').val('');
+    // Puliamo l'URL da eventuali residui di testo cURL
+    let url = $("#curl").val().trim().split(" ")[0];
+    // Recuperiamo il payload rimuovendo gli spazi vuoti
+    let payloadRaw = $("#payload").val().trim();
+    let metodoSelezionato = $("input[name='metodoHttp']:checked").val();
+
+    if (url === "") {
+      alert("Inserisci un URL valido!");
+      return;
+    }
+
+    let opzioniFetch = {
+      method: metodoSelezionato, // Default se non c'è payload
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+
+    // Se l'utente ha inserito qualcosa nel campo payload, configuriamo la POST
+    if (payloadRaw !== "") {
+      try {
+        // Verifichiamo che il JSON inserito sia valido
+        JSON.parse(payloadRaw);
+
+        opzioniFetch.method = metodoSelezionato;
+        opzioniFetch.body = payloadRaw;
+      } catch (e) {
+        alert("Il Payload inserito non è un JSON valido! Controlla le virgolette e le virgole.");
+        return;
+      }
+    }
+
+    console.log("Invocazione in corso su:", url, opzioniFetch);
+    getRisposta(url, opzioniFetch);
+  });
+
+  async function getRisposta(url, opzioniFetch) {
+    let testoPrecedente = $('#Risposta').val();
+
+    try {
+      const risposta = await fetch(url, opzioniFetch);
+
+      if (!risposta.ok) {
+        throw new Error(`Errore di rete: ${risposta.status}`);
+      }
+
+      // Convertiamo la risposta del server in oggetto JSON
+      const dati = await risposta.json();
+
+      $("#titolo").html(`<span class="text-success">Richiesta completata con successo!</span>`);
+
+      // Mostriamo i dati formattati dentro la textarea.
+      // Se la tua API restituisce una proprietà specifica (.body), usa dati.body.
+      // Altrimenti, JSON.stringify(dati, null, 2) mostra tutto l'elenco/oggetto ricevuto.
+      let testoRisposta = dati.body ? dati.body : JSON.stringify(dati, null, 2);
+
+      $("#Risposta").val(testoPrecedente + `\n--- Risposta ---\n` + testoRisposta);
+
+    } catch (errore) {
+      $("#titolo").html(`<span class="text-danger">Errore</span>`);
+      $("#Risposta").val(testoPrecedente + `\nErrore: Impossibile recuperare i dati. (${errore.message})`);
+    }
+  }
+</script>
+
+</html>

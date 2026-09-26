@@ -7,8 +7,8 @@
 
 .container {
     background: var(--colore-container);
-    padding: 2em 5em;
-    width: 60%;
+    padding: 2em 2em;
+    width: 80%;
     display: grid;
     place-items: center;
     /* Centra sia in orizzontale che in verticale */
