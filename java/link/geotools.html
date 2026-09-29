@@ -16,12 +16,11 @@
     <p>Clicca sui link per caricare</p>
   </center>
   <div class="container">
-    <h2 class="h2">Programmatore : <p><span id="nome">Michele Genchi</span></p>
-    </h2>
+    <h2 class="h2">Programmatore : <span id="nome">Michele Genchi</span></h2>
 
     <!-- Campo per l'URL -->
-    <label for="curl">URL della chiamata:</label>
-    <textarea id="curl" name="curl" placeholder="http://ddns.net" rows="2" class="form-control mb-3"></textarea>
+    <label for="curl">URL della chiamata: <b>http://casagenchi5.ddns.net:7000/..</b></label>
+    <textarea id="curl" name="curl" placeholder="http://casagenchi5.ddns.net:7000/.." rows="2" class="form-control mb-3"></textarea>
     <!-- NUOVO: Selezione Metodo HTTP -->
     <label class="d-block mb-2 font-weight-bold">Metodo HTTP:</label>
     <div class="mb-3">
@@ -61,6 +60,22 @@
 </body>
 <script src="../../resources/js/jquery-3.6.0.min.js"></script>
 <script>
+
+   // Seleziona l'input tramite il suo ID (o classe)
+    $('#curl').focus(function() {
+        // Se il campo è vuoto, copia il valore del placeholder
+        if ($(this).val() === '') {
+            $(this).val($(this).attr('placeholder'));
+        }
+    });
+
+    $('#curl').blur(function() {
+        // Se l'utente esce senza modificare il testo, svuota il campo
+        if ($(this).val() === $(this).attr('placeholder')) {
+            $(this).val('');
+        }
+    });
+
   // Gestione della disattivazione della textarea del Payload in base al metodo
   $("input[name='metodoHttp']").change(function () {
     let metodo = $(this).val();
