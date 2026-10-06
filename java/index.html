@@ -5,29 +5,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index Progetti Java</title>
+  <!-- Carica Font Awesome per le icone -->
+  <link rel="stylesheet" href="https://cloudflare.com">
   <link rel="icon" type="image/x-icon" href="index.ico">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="d-flex flex-column justify-content-center align-items-center min-vh-100 m-0">
   <h1 class="h1">Benvenuto</h1>
-  <center>
-    <p>Clicca sui link per caricare</p>
-  </center>
-  <div class="container">
-    <h2 class="h2">Programmatore : <span id="nome">Michele Genchi</span></h2>
-    <ul class="custom-list">
-      <a href="http://casagenchi5.ddns.net:7100/giococoppie/partita">
-        <li>Gioco Coppie</li>
-      </a>
-      <a href="link/geotools.html">
-        <li>Geotools</li>
-      </a>
-      <a href="http://casagenchi5.ddns.net:8081">
-        <li>Home</li>
-      </a>
-    </ul>
+  <!-- Icone Social ottimizzate per Mobile e Desktop -->
+  <div id="social-section" class="social-container d-flex justify-content-center gap-3 my-3">
+
+
   </div>
+  <!-- Contenitore a larghezza intera -->
+  <div class="container bg-light py-4">
+    <div class="row justify-content-center text-center g-3 py-4 py-md-5 mx-0">
+      <div class="col-12 col-sm-auto">
+        <h2 class="h2 m-0 fs-3 fs-sm-2">
+          Programmatore: <span id="nome" class="d-block d-sm-inline">Michele Genchi</span>
+        </h2>
+      </div>
+    </div>
+    <!-- Colonna 1 -->
+    <div class="row justify-content-center text-left g-3">
+      <div class="col-md-6">
+        <ul class="custom-list">
+          <li><a href="http://casagenchi5.ddns.net:7100/giococoppie/partita">
+              Gioco Coppie</a></li>
+          <li><a href="link/geotools.html">
+            Geotools</a></li>
+          <li><a href="http://casagenchi5.ddns.net:8081">
+            Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. Carica PRIMA la libreria jQuery (Locale o tramite CDN) -->
+  <script src="../resources/js/jquery-3.6.0.min.js"></script>
+  <!-- Assicurati che jQuery sia caricato PRIMA di questo blocco -->
+  <script src="../resources/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      // Qui dentro puoi usare $ in sicurezza, fa riferimento a jQuery
+      console.log("jquery => carica social icon");
+      $('#social-section').load('../social.html');
+    });
+  </script>
+</body>
+
+</html>
 </body>
 
 </html>
