@@ -1,0 +1,100 @@
+<style>
+    #nicemedia {
+        margin: 0;
+        padding: 0;
+        max-height: 700px;
+    }
+
+    #nicemedia>img {
+        position: relative;
+        width: 50%;
+        height: 450px;
+        top: 250px;
+    }
+
+    #nicemedia>#testo {
+        width: 35%;
+        position: relative;
+        background-color: white;
+        color: black;
+        top: -480px;
+        left: 400px;
+        padding: 0 60px 10px 15%;
+        z-index: -1;
+    }
+
+    #nicemedia>#testo>h5,
+    #nicemedia>#testo>h3 {
+        text-align: right;
+    }
+
+    #nicemedia>#testo>h5 {
+        color: #03A800;
+    }
+
+    #nicemedia>#testo>h3 {
+        font-weight: bold;
+    }
+
+    /* On screens that are 776px or less, set the background color to olive */
+    @media screen and (max-width: 776px) {
+
+        #nicemedia>img,
+        #nicemedia>#testo {
+            display: block;
+            position: static;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+            padding: 0px;
+            margin: 0;
+        }
+
+        #nicemedia>img {
+            margin: 10px;
+        }
+
+        #nicemedia>#testo {
+            padding: 10px;
+        }
+
+        #nicemedia {
+            width: 100%;
+            max-height: 1200px;
+        }
+    }
+</style>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Nice Media Testo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="menu-scroll.js"></script>
+    <link rel="stylesheet" href="menu-scroll.css">
+</head>
+
+<body>
+    <section style="width:80%; margin:auto;padding:auto;">
+        <div id="nicemedia" style="width:80%;">
+            <img src="https://www.tarantoeventi.com/wp-content/uploads/2024/03/bg_experience-2.jpg"></img>
+            <div id="testo">
+                <h5>LUNEDì 1 APRILE</h4>
+                    <h3>PASQUETTA 2024<br>
+                        VETRÈRE IL FRUTTETO</h3>
+                    <p>
+                        Lunedì 1 Aprile ti aspettiamo dalle ore 11:30 per brindare e divertirci in compagnia.
+                        Il frutteto Vetrére è pronto ad accogliervi e a regalarvi una giornata ricca di allegria, buona
+                        cucina, musica, e ovviamente… tanto buon vino.
+                        Per deliziarvi abbiamo infatti organizzato uno spettacolo di live cooking con prodotti tipici
+                        locali, accompagnati da vino e drink illimitati. Immancabile il nostro DJ Set, che vi farà
+                        ballare e divertire per tutta la giornata!
+                        Affrettati: le prevendite saranno disponibili in numero limitato!
+                    </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

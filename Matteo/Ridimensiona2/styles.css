@@ -1,0 +1,39 @@
+form {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+label {
+    float: left;
+    margin: 10px;
+}
+
+input {
+    float: right;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+.title {
+    background-color: red;
+    color: white;
+}
+
+fieldset {
+    width: 400px;
+    height: 400px;
+}
+
+div#submit {
+    clear: right;
+    display: grid;
+    color: brown;
+}
+
+input#submit {
+    width:auto;
+}

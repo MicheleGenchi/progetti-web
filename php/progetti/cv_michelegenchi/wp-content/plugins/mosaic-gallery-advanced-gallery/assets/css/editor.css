@@ -1,0 +1,39 @@
+.migy-side-panel-wrap.is-background {
+    background: white;
+    padding: 20px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+.migy-side-panel-btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+.migy-buy-now-btn.is-bundle {
+    font: normal normal normal 13px/17px Segoe UI;
+    font-weight: normal;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin: 0 15px;
+    background-image: linear-gradient(96deg, #F0AC0E 0%, #F56616 100%);
+}
+.migy-demo-btn, .migy-buy-now-btn {
+    border-radius: 3px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-image: linear-gradient(96deg, #F0AC0E 0%, #F56616 100%);
+}
+.migy-demo-btn:hover, .migy-buy-now-btn:hover {
+    color: #FFFFFF !important;
+}
+
+.migy-side-panel-img img{
+    max-width: 100%;
+}

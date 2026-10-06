@@ -1,0 +1,52 @@
+/* elenco_custom */
+h2.domanda {
+    display:flexbox;
+	font-size:28px;
+	font-weight:normal;
+	margin:0!important;
+	padding:10px!important;
+	/*background-color:#EBEBEB;*/
+	color:black;
+	text-align:left;
+}
+
+p.risposta {
+    display:none;
+    padding:20px;
+    padding-left:50px;
+    margin:0!important;
+    /*background-color: #ebebeb;*/
+    color:#333333;
+    border-style:solid;
+    border-color: lightgrey;
+    border:1px;
+	text-align:left;
+}
+
+.elenco {
+    width:90%;
+    vertical-align: middle;
+}
+
+
+.segno {
+    font-weight:bold;
+	border-left:1px solid #FF0060;
+    cursor: pointer;
+    /*cursor: url(https://www.orientacenter.com/wp-content/uploads/2024/01/icons8-hand-up-48.png), auto; */
+}
+
+.maggiore {
+    float:right;
+    padding-right:15px;
+}
+
+.domanda:active {
+    border-bottom: 1px solid #FF0060;
+}
+
+.domanda:hover {
+	border-bottom: 1px solid #FF0060;
+	color:#FF0060;
+    /*text-decoration: underline solid #FF0060 1px;*/
+}

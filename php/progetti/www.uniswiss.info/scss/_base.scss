@@ -1,0 +1,420 @@
+// main: main.scss
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF;
+  color: $gray-800;
+}
+.clear {
+  clear: both;
+}
+//COLOR
+.red {
+  color:$red;
+}
+.green {
+  color:$green;
+}
+.header-white {
+  padding: 20px 0 20px 0;
+  background-color: #FFF;
+  .assistant {
+    color: #e82934;
+    a {
+      color: #e82934;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    .chiama {
+      margin-left: 20px;
+    }
+    .btn {
+      color:#FFF;
+    }
+    .btn:hover {
+      color:#000;
+    }
+  }
+}
+.logo {
+  max-width:300px;
+}
+//TIPOGRAFIA
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #e82934;
+}
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #e82934;
+}
+h3 {
+  font-size:1.5rem;
+  font-weight: 700;
+  line-height:2.125rem;
+}
+p {
+  font-size:1.25rem;
+  font-weight: 400;
+  line-height:1.875rem;
+}
+b {
+  font-weight: 700;
+  font-weight: bold;
+}
+a {
+  color:#2962FF;
+}
+.scarica-certificato {
+  padding: 60px 0 40px 0;
+  background-image: url("../images/corsi-di-formazione.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  h2 {
+    color:#FFF;
+  }
+}
+.hero {
+  padding: 60px 0 40px 0;
+  background-image: url("../images/corsi-di-formazione.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  margin-bottom: 2px;
+  h1, h2 {
+    color:#FFF;
+  }
+  p {
+    margin: 30px 0 0 0;
+    color:#FFF;
+  }
+  .tipi {
+    list-style: none;
+    margin-top: 20px;
+    li {
+      color:#FFF;
+      margin-bottom: 10px;
+      a {
+        font-size:18px;
+        color:#FFF;
+      }
+    }
+  }
+}
+.intro {
+  text-align:center;
+  margin-bottom: 30px;
+}
+.servizi {
+  padding: 30px 0 60px 0;
+  background-color: #9c0009;
+  color: #FFF;
+  text-align: center;
+  .row {
+    margin-top: 16px;
+  }
+  h2 {
+    color: #FFF;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 26px;
+  }
+  .benefit {
+    font-size: 18px;
+    margin-top: 20px;
+    background-color:#810108;
+    color:#FFF;
+    border-radius: 3px;
+    padding: 3px;
+  }
+  .img {
+    max-width:100px;
+  }
+}
+.laurea {
+  background-image: url("../images/corsi-di-formazione.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  color: #FFF;
+  padding: 40px 0 40px 0;
+  h2 {
+    color:#FFF;
+  }
+  .colonna {
+    background-color: rgba(13, 71, 161, 0.7);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+.recupero_anni {
+  background-image: url("../images/recupero-anni-scolastici.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #FFF;
+  color: #000;
+  padding: 40px 0 40px 0;
+  .colonna {
+    background-color: rgba(13, 71, 161, 0.8);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    h4 {
+      color: #FFF;
+    }
+    li {
+      color: #FFF;
+    }
+  }
+  .promossi {
+    background-color:#43A047;
+    color:#E8F5E9;
+    border-radius: 3px;
+    padding: 3px;
+  }
+}
+//CALL TO ACTION
+.btn {
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  color:#000;
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 0 #ffc636;
+  border: 1px solid #ffc636;
+  background: -moz-linear-gradient(top, #ffd872 0%, #ffc636 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffd872 0%,#ffc636 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffd872 0%,#ffc636 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd872', endColorstr='#ffc636',GradientType=0 ); /* IE6-9*/
+}
+.btn:hover {
+  color:#000;
+  box-shadow: inset 0 1px 0 0 #ffc636;
+  border: 1px solid #ffc636;
+  background: -moz-linear-gradient(top, #ffd872 0%, #ffc636 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffd872 0%,#ffc636 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffd872 0%,#ffc636 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd872', endColorstr='#ffc636',GradientType=0 ); /* IE6-9 */
+}
+.btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active {
+  color:#000;
+  border: 1px solid #ffd872;
+  box-shadow: inset 0 1px 0 0 #ffc636;
+  background: -moz-linear-gradient(top, #ffd872 0%, #ffc636 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffd872 0%,#ffc636 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffd872 0%,#ffc636 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd872', endColorstr='#ffc636',GradientType=0 ); /* IE6-9 */
+}
+// FOOTER
+.page-footer {
+  text-align: center;
+  margin-top: 5px;
+  background-color:#FFF;
+  color:$gray-700;
+  padding:40px 0 60px 0;
+  font-weight: normal;
+  .copy {
+    font-size:16px;
+    line-height:22px;
+    margin-top: 10px;
+  }
+  .logo {
+    max-width: 200px;
+  }
+   a {
+    color:$gray-600 !important;
+  }
+}
+.hidden-desk {
+  display:none;
+}
+.display-desk {
+  display: block;
+}
+.servizi {
+  img {
+    margin-bottom: 10px;
+  }
+}
+.form {
+  margin: 30px 0 3px 0;
+  .hero {
+    position: absolute;
+    top: 0;
+  }
+  .form-int {
+    background-color:$gray-200;
+    margin:10px 0 0 0;
+    padding: 20px;
+    border-radius:10px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+    h3{
+      margin-top: 20px;
+    }
+    label {
+      font-weight: normal;
+      color: $gray-700;
+    }
+  }
+  .loginbox-v4__separator-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
+  .loginbox-v4__separator-container .loginbox-v4__separator {
+    flex: 1 0 auto;
+    min-width: 1px;
+  }
+  .loginbox-v4__separator {
+    border-top: 1px solid $gray-700;
+    height: 1px;
+  }
+  .loginbox-v4__separator-text {
+    padding: 0 10px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  input[type="email"], input[type="text"], input[type="number"], input[type="password"], textarea, select, .multiselect {
+    border: 2px solid $gray-300;
+    border-radius: 4px;
+    padding: 12px;
+    line-height: normal;
+    line-height: normal;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  select {
+    background: url('images/arrow0.png') #fff no-repeat right center;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: auto auto;
+    background-size: 16px;
+    background-position: calc(100% - 12px) calc(20px);
+    color: $gray-600;
+  }
+}
+.form_login {
+  margin: 10px 0 10px 0;
+    background-color:$gray-200;
+    margin:10px 0 20px 0;
+    padding:10px 16px 20px 16px;
+    border-radius:10px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+    .mar-bot {
+    margin-bottom: 16px;
+    }
+    h3{
+      margin:5px 0 16px 16px;
+      padding: 0;
+    }
+    label {
+      font-weight: normal;
+      color: $gray-700;
+    }
+  input[type="email"], input[type="text"], input[type="number"], input[type="password"], textarea, select, .multiselect {
+    border: 2px solid $gray-500;
+    border-radius: 4px;
+    padding: 12px;
+    line-height: normal;
+    line-height: normal;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
+#msg_risposta {
+  padding: 16px;
+  text-align: center;
+  font-size:24px;
+}
+.divider {
+  border-bottom: 1px dashed $gray-600;
+  padding-bottom:1.25rem;
+  margin-bottom:0.9375rem;
+}
+.divider_solid {
+  border-bottom: 2px solid $gray-700;
+  padding-bottom:1.25rem;
+  margin-bottom:0.9375rem;
+}
+.come {
+  padding: 40px 0 40px 0;
+  background-color:$gray-200;
+  li {
+    font-size:1.25rem;
+    font-weight: 400;
+    line-height:1.875rem;
+  }
+  .intro {
+    text-align:center;
+    margin: 40px 0 40px 0;
+    h2 {
+      margin-bottom: 0;
+    }
+    h3 {
+      margin-top:15px;
+    }
+  }
+}
+.fissa-cta {
+  border-top:1px solid #131313;
+  font-family:arial, helvetica, sans-serif;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+  font-weight:bold;
+  background: #4c4c4c; /* Old browsers */
+  background: -moz-linear-gradient(top, #4c4c4c 0%, #131313 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #4c4c4c 0%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #4c4c4c 0%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+  font-size: 14px;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  color:#FFF;
+  -webkit-box-shadow: -1px -7px 5px -7px rgba(0,0,0,0.4);
+  -moz-box-shadow: -1px -7px 5px -7px rgba(0,0,0,0.4);
+  box-shadow: -1px -7px 5px -7px rgba(0,0,0,0.4);
+}
+.fissa-cta .whatsapp2 {
+  color:#FFF;
+  text-decoration: none;
+}
+.fissa-cta .whatsapp2 a {
+  color:#FFF;
+  text-decoration: none;
+}
+.fissa-cta .chiama2 {
+  color:#FFF;
+  text-decoration: none;
+}
+.fissa-cta .chiama2 a {
+  color:#FFF;
+  text-decoration: none;
+}

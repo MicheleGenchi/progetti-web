@@ -1,0 +1,53 @@
+<!--    questo meteo appare dentro la pagina  delle testate di giornale -->
+<html>
+
+    <head>
+        <meta content="utf-8" http-equiv="encoding">
+        <title>Openweather test</title>
+    </head>
+
+    <body>
+        <div class="meteo"></div>        
+    </body>
+
+</html>
+<script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        const div = document.createElement("div");
+        div.id = "openweathermap-widget-11";
+        document.querySelector(".meteo").appendChild(div);
+        window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = []; window.myWidgetParam.push({ id: 11, cityid: '6542124', appid: '9078a3c5a5963bef6ced8e76ff1c4a5d', units: 'metric', containerid: 'openweathermap-widget-11', lang: 'it', }); (function () { var script = document.createElement('script'); script.async = true; script.charset = "utf-8"; script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s); })();
+    });
+</script>
+<style>
+
+    ul.calendar li {
+        margin-left:40px;
+    }
+
+    li {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important;
+        font-size:26px!important;
+    }
+
+    ul.calendar li img {
+        width:96px;
+        height:96px;
+    }
+
+
+    div#graphic2 {
+        display: none;
+    }
+
+    #container-openweathermap-widget-11>div>.widget-left-menu.widget-left-menu--brown {
+        display: none;
+     }
+
+    .widget-left {
+        background-color:transparent!important;
+        box-shadow:none!important;
+    }
+</style>

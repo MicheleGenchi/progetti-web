@@ -1,0 +1,319 @@
+/* Admin theme templates Start */
+#wpcontent {
+    padding-left: unset;
+}
+.migy-templates-wrap {
+    font-weight: normal;
+    background: #f0f0f1;
+    margin: unset;
+}
+.migy-header{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    padding: 5px 15px;
+}
+
+.migy-topbar {
+    background: linear-gradient(90deg, rgba(240, 172, 14, 1), rgba(245, 102, 22, 1) 100%);
+    text-align: center;
+    color: white;
+    padding: 14px 0;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.migy-header .migy-header-logo {
+    flex-basis: 35%;
+    display: flex;
+}
+
+.migy-header-logo img {
+    width: 150px;
+    margin: auto 0 !important;
+    height: auto;
+}
+.migy-header .migy-header-search {
+    flex-basis: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.migy-header-search input {
+    width: 100%;
+    padding: 4px 30px 4px 10px
+}
+.migy-header-search span {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    transform: translateX(-5px);
+    color: #f0ac0e;
+}
+
+.migy-header-search span::before {
+    font-size: 25px;
+}
+.migy-header .migy-collection-bar {
+    flex-basis: 35%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.migy-header .migy-collection-bar h4 {
+    text-align: end;
+    padding-right: 30px !important;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #e3e3e3;
+    transition: 0.4s ease-in-out;
+    margin: 0;
+}
+
+.migy-header .migy-collection-bar h4::after {
+    position: absolute;
+    content: '\f345';
+    right: 8px;
+    top: 0;
+    bottom: -2px;
+    color: #3c434a;
+    font-family: 'dashicons';
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.migy-header .migy-collection-bar ul {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    right: 0;
+    top: 35px;
+    padding: 24px 26px;
+    border: 1px solid #dddddd;
+    display: none;
+}
+
+.migy-header .migy-collection-bar ul li {
+    padding: 0px 10px;
+    margin-bottom: 12px;
+    &:hover a {
+        color: #f0ac0e;
+    }
+}
+
+.migy-header .migy-collection-bar ul li a {
+    text-decoration: unset;
+    color: #838383;
+}
+.migy-collection-bar .hover-cont {
+    margin-left: auto;
+    width: fit-content;
+}
+
+.migy-header .migy-collection-bar ul::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    left: 0;
+    height: 112%;
+    z-index: -1;
+}
+
+.migy-wrap {
+    padding: 30px 50px;
+}
+#wpbody-content .notice{
+    display: none;
+}
+.migy-wrapper {
+    width: 100%;
+    display: table;
+}
+.migy-box {
+    color: #fff;
+    font-size: 150%;
+    width: 33.33%;
+    float: left;
+    margin-bottom: 25px;
+}
+.migy-box-widget {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.migy-media {
+    position: relative;
+    background: #FFFFFF;
+    /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); */
+    height: 350px;
+    overflow: hidden;
+}
+.migy-media img.migy-product-img {
+    height: 100%;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.migy-product-price-img{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    max-height: 139px;
+    max-width: 204px;
+}
+.migy-template-title {
+    text-align: left;
+    color: #000;
+    padding: 15px 20px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    border-top: 1px solid #c5c5c5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.migy-btn {
+    text-align: left;
+    margin: 10px 0px;
+    padding: 0px 15px 15px 15px;
+}
+.migy-btn a {
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0px 5px;
+    background: #f0ac0e;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.migy-btn a.ins-btn.installbtn {
+    background-color: #f03b0e !important;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background-color: #cd3712 !important;
+    }
+}
+
+.migy-btn a.documentationbtn {
+    width: 150px;
+}
+.migy-category-filter.active:focus {
+    outline: unset;
+    box-shadow: unset;
+}
+.migy-loader-overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 9998;
+}
+
+.migy-loader {
+    position: fixed;
+    display: flex;
+    top: 50%;
+    z-index: 9999;
+    left: 50%;
+    transform: translate(50%, 50%);
+}
+.migy-loader:before , .migy-loader:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    margin: 0  5px  ;
+    border-radius: 50%;
+    color: #f0ac0e;
+    background: currentColor;
+    box-shadow: 50px 0 ,  -50px 0;
+    animation: left 1s infinite ease-in-out;
+}
+.migy-loader:after {
+    color: #FF3D00;
+    animation: right 1.1s infinite ease-in-out;
+}
+@keyframes right {
+    0% , 100%{transform: translateY(-10px) }
+    50% { transform: translateY(10px) }
+}
+
+@keyframes left {
+    0% , 100%{ transform: translateY(10px) }
+    50% { transform: translateY(-10px) }
+}
+
+@media (max-width: 767px) {
+    .migy-header .migy-collection-bar {
+        flex-basis: 20%;
+    }
+    .migy-header .migy-header-search {
+        flex-basis: 60%;
+    }
+}
+
+/* Admin theme templates End */
+.notice.is-dismissible.migy {
+    display: none;
+}
+
+.migy-topbar-buy-now {
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin: 0px 5px;
+    background: #f0ac0e;
+    background-color: rgb(240, 172, 14);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.migy-topbar-buy-now:hover, .migy-topbar-buy-now:focus {
+    color: #FFFFFF;
+}
+.migy-topbar-buy-now:focus {
+    outline: unset;
+    box-shadow: unset;
+}
+
+.migy-category-filter.active {
+	font-weight: bolder;
+}

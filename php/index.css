@@ -1,0 +1,130 @@
+:root {
+    --colore-sfondo: #ff1500;
+    --colore-testo: #333333;
+    --colore-selezione: #ffffff;
+    --colore-container: lightgrey;
+}
+
+.container {
+    background: var(--colore-container);
+    padding: 2em 2em;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    /* Centra sia in orizzontale che in verticale */
+    margin:auto;
+}
+
+span {
+    color: var(--colore-sfondo);
+}
+
+ul.custom-list {
+  list-style: none; /* Rimuove i punti elenco predefiniti */
+  padding: 0;
+}
+
+ul.custom-list li {
+  position: relative;
+  padding:10px 20px;
+  padding-left: 40px; /* Spazio per l'icona */
+  margin-bottom: 15px;
+}
+
+/* Icona generica o base */
+ul.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 20;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Icona personalizzata per la prima voce */
+ul.custom-list li.icon-cv::before {
+  background-image: url('resources/img/icon/cv.png');
+}
+/* Icona personalizzata per la terza voce */
+ul.custom-list li.icon-scuola::before {
+  background-image: url('resources/img/icon/scuola.png');
+}
+/* Icona personalizzata per la seconda voce */
+ul.custom-list li.icon-matematica::before {
+  background-image: url('resources/img/icon/matematica.ico');
+}
+/* Icona personalizzata per la seconda voce */
+ul.custom-list li.icon-palestra::before {
+  background-image: url('resources/img/icon/palestra.png');
+}
+/* Icona personalizzata per la seconda voce */
+ul.custom-list li.icon-parcheggio::before {
+  background-image: url('resources/img/icon/parcheggio.png');
+}
+/* Icona personalizzata per la seconda voce */
+ul.custom-list li.icon-calendario::before {
+  background-image: url('resources/img/icon/calendario.png');
+}
+/* Icona personalizzata per la terza voce */
+ul.custom-list li.icon-spesa::before {
+  background-image: url('resources/img/icon/spesa.png');
+}
+/* Icona personalizzata per la terza voce */
+ul.custom-list li.icon-php::before {
+  background-image: url('resources/img/icon/php.png');
+}
+/* Icona personalizzata per la terza voce */
+ul.custom-list li.icon-java::before {
+  background-image: url('resources/img/icon/java.png');
+}
+/* Icona personalizzata per la seconda voce */
+ul.custom-list li.icon-manutenzione::before {
+  background-image: url('resources/img/icon/manutenzione.png');
+}
+/* Icona personalizzata per la prima voce */
+ul.custom-list li.icon-home::before {
+  background-image: url('resources/img/icon/home.png');
+}
+
+
+ul li a {
+    color: var(--colore-testo);
+}
+
+/* Sfondo quando passi il mouse sopra (selezione/hover) */
+ul li:hover {
+    background-color: var(--colore-sfondo);
+    color: var(--colore-selezione);
+    /* Cambia con il colore che preferisci */
+}
+
+ul li:hover a {
+    color: var(--colore-selezione);
+    font-weight: 700;
+}
+
+/* Rimuove la sottolineatura da tutti i link della pagina */
+a {
+    text-decoration: none;
+    display: block;
+    /* Rende il link compatibile con ::first-letter */
+    font-size: 20px;
+    color:var(--colore-testo);
+}
+
+a::first-letter {
+    font-weight: bold;
+    font-size: 105%;
+}
+
+.h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 28px;
+    text-align: left;
+}

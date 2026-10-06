@@ -1,0 +1,35 @@
+:root {
+    --color:white;
+    --bk-color:blue;
+    --bk-color-hover:red;
+}
+
+* {
+    color:var(--color);
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+button, div {
+    background-color: var(--bk-color);
+    border-radius: 32px;
+    padding:10px;
+}
+
+button:hover {
+    background-color: var(--bk-color-hover);
+    font-weight: bold;
+}
+
+div.border {
+    background-color:var(--color);
+    display:inline;
+    position: relative;
+    margin: 20px;
+}
+
+div.border:hover {
+    border:2px solid var(--bk-color);
+    padding:11px 2px 13px 2px;
+    zoom:115%;
+}
