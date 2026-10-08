@@ -92,6 +92,11 @@ ul.custom-list li.icon-home::before {
   background-image: url('resources/img/icon/home.png');
 }
 
+/* Icona personalizzata per la prima voce */
+ul.custom-list li.icon-libri::before {
+  background-image: url('resources/img/icon/libri.png');
+}
+
 ul li a {
   color: var(--colore-testo);
 }
